@@ -12,5 +12,6 @@
 class Game < ActiveRecord::Base
   attr_accessible :current_player, :name
   has_and_belongs_to_many :users
+  has_many :cards
   validates :name, :presence => true
 end

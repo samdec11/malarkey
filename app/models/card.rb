@@ -9,10 +9,13 @@
 #  updated_at :datetime         not null
 #  face_image :string(255)
 #  back_image :string(255)      default("cardback1.jpg")
+#  game_id    :integer
 #
 
 class Card < ActiveRecord::Base
   attr_accessible :face_image, :back_image, :num, :suit
+  validates :num, :suit, :presence => true
+  belongs_to :game
 
   def Card.create_deck
     (1..13).to_a.each do |number|

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415141808) do
+ActiveRecord::Schema.define(:version => 20130415150856) do
 
   create_table "cards", :force => true do |t|
     t.integer  "num"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20130415141808) do
     t.datetime "updated_at",                              :null => false
     t.string   "face_image"
     t.string   "back_image", :default => "cardback1.jpg"
+    t.integer  "game_id"
   end
 
   create_table "games", :force => true do |t|

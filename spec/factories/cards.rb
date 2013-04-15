@@ -3,7 +3,6 @@
 FactoryGirl.define do
   factory :card do
     num 1
-    suit "MyString"
-    image "MyString"
+    suit "hearts"
   end
 end

@@ -31,4 +31,12 @@ describe Game do
       expect(user.games.first).to eq game
     end
   end
+  describe '#cards' do
+    it 'has many cards' do
+      card = FactoryGirl.create(:card)
+      game.cards << card
+      expect(game.cards.first).to eq card
+      expect(card.game).to eq game
+    end
+  end
 end
