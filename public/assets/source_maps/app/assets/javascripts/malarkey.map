@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/malarkey.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAA,EAAkB,CAAZ,KAAwB;CAC5B,CAAiB,EAAjB,WAAA;CADF,GAAa;;CAAb,CAGA,CAAG,GAAO,GAAK;CACZ,GAAA,CAAD,EAAA,IAAA;CADF,EAAe;;CAHf,CAMA,CAAG,EAAH,CAAY;CACV,CAAU,EAAV,IAAA;CAPF,GAMY;CANZ"
+}

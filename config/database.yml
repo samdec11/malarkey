@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: malarkey_development
+  pool: 5
+  username: Sean
+  password:
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: malarkey_test
+  pool: 5
+  username: Sean
+  password:
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: malarkey_production
+  pool: 5
+  username: Sean
+  password:
