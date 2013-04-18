@@ -1,0 +1,2 @@
+each model
+  <div class='card' id={{unbound suit}}{{unbound num}}></div>

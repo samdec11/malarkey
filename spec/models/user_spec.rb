@@ -7,6 +7,7 @@
 #  password_digest :string(255)
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  is_online       :boolean          default(TRUE)
 #
 
 require 'spec_helper'

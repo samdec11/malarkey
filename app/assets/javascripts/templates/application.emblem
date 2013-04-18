@@ -1,5 +1,34 @@
-h1 Application
+.row
+  .large-12.columns
+    .nav-bar.right
+      ul.button-group
+        li
+          linkTo 'index' class='button' | Home
+        li
+          linkTo 'about' class='button' | About
+        li
+          linkTo 'tutorial' class='button' | Tutorial
+        li
+          if loggedIn
+            button{action 'logOut'} Log Out
+          else
+            button{action 'showForm'} Log In
+    h1 Malarkey
+      <small> Cheat your way to victory!</small>
+    hr/
 
-p Your content here.
+.row
+  .large-5.large-centered.columns
+    #login
+      if loggedIn
+        p Hi, {{username}}
+      else
+        form action='/login' method='post'
+          label for="username" Username
+          input id="username" name="username" type="text"
+          label for="password" Password
+          input id="password" name="password" type="password"
+          / input name="commit" type="submit" value="Log in"
+          button{action 'logIn'} Log In
 
 outlet

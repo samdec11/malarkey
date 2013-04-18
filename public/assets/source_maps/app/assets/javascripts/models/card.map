@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/models/card.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,CAAH,CAAmB,CAAR;CACT,CAAK,CAAL,CAAA,IAAK;CAAL,CACM,EAAN,IAAM;CADN,CAEM,EAAN,KAAM,CAAA;CAHR,GAAW;CAAX"
+}

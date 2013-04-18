@@ -10,9 +10,10 @@
 #  is_online       :boolean          default(TRUE)
 #
 
-class User < ActiveRecord::Base
-  has_secure_password
-  attr_accessible :password, :password_confirmation, :username
-  has_and_belongs_to_many :games
-  validates :username, :presence => true
+FactoryGirl.define do
+  factory :user do
+    username "Bob"
+    password "a"
+    password_confirmation "a"
+  end
 end

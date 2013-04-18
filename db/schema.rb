@@ -11,16 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415150856) do
+ActiveRecord::Schema.define(:version => 20130416103243) do
 
   create_table "cards", :force => true do |t|
     t.integer  "num"
     t.string   "suit"
-    t.datetime "created_at",                              :null => false
-    t.datetime "updated_at",                              :null => false
-    t.string   "face_image"
-    t.string   "back_image", :default => "cardback1.jpg"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "game_id"
+  end
+
+  create_table "channels", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "games", :force => true do |t|
@@ -38,8 +42,9 @@ ActiveRecord::Schema.define(:version => 20130415150856) do
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+    t.boolean  "is_online",       :default => true
   end
 
 end

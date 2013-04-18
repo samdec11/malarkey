@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "",
+  "sourceRoot": "",
+  "sources": [
+    "/assets/source_maps/app/assets/javascripts/models/game.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;CAAA,CAAA,CAAG,CAAH,CAAmB,CAAR;CACT,CAAM,EAAN,IAAM;CAAN,CACe,EAAf,IAAe,KAAf;CADA,CAEO,EAAP,CAAA,EAAO,GAAA;CAFP,CAGO,EAAP,CAAA,EAAO,GAAA;CAJT,GAAW;CAAX"
+}
